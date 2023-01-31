@@ -1,6 +1,12 @@
+:root {
+  --pr-color: #048853;
+  --sc-color: #ffffff;
+  --bg-color: #f3fff4;
+}
+
 body {
   font-family: "Poppins", sans-serif;
-  background-color: green;
+  background-color: var(--bg-color);
 }
 
 .navbar-brand {
@@ -12,5 +18,26 @@ body {
 }
 
 .nav-link.active {
+  font-weight: 700;
+}
+
+.button-primary {
+  width: 144px;
+  height: 40px;
+  background-color: transparent;
+  color: var(--sc-color);
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.button-secondary {
+  width: 144px;
+  height: 40px;
+  background-color: white;
+  color: var(--pr-color);
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
   font-weight: 700;
 }
